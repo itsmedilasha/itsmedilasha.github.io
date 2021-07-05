@@ -1,0 +1,265 @@
+@font-face {
+	font-family: header-font;
+	src: url(/fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
+}
+@font-face {
+	font-family: body-font;
+	src: url(/ink-free-normal.ttf);
+}
+:root{
+	--body-color:#292c2c; 
+	--font-color:#3FDF97;
+	--sub-title-color:#84EABC;
+	--nav-color:white;
+	--para-color:white;
+}
+
+body{
+	min-width:900px;
+	margin: 0 auto;
+	background-color:var(--body-color);
+	font-size: 30px;
+}
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 60%;
+	background-color: rgba(207, 207, 207, 0.25);
+	font-family:header-font;
+	border-radius: 70px;
+	margin-top: 1%;
+	position: relative;
+	top: 0;
+	left: 20%;
+	height: auto;
+	font-size: 0.62em;
+	z-index: 1;
+	padding-right:0.5em ;
+	padding-left: 0.75em;
+	flex-basis: 100px 100px auto;
+}
+
+.logo{
+	padding: 0;
+	min-width: auto;
+	
+}
+.logo img{
+	width: 50px;
+	height: 50px;
+	border-radius: 12px;
+	margin-top: 1.2em;
+}
+
+
+nav ul{
+	/*border: 1px solid black;*/
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+nav li{
+	padding:0.75em;
+}
+nav a{
+	text-decoration: none;
+	color:  var(--nav-color);
+	font-size:1.25em
+}
+nav a:hover{
+	color: rgb(26, 172, 104);
+
+}
+
+.main-body{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+}
+.img-side{
+	min-width: 400px;
+	height: 99.8%;
+	width: 35%;
+	
+}
+.img{
+	height: 100%;
+	width: 100%;
+}
+.lal{
+	font-size: 0.65em;
+	padding-right: 0.5em;
+}
+.content{
+	width: 30%;
+	margin-top: 15%;	
+	margin-left: 7%;	
+	padding: 0;
+}
+.line{
+	border-top: 10px solid rgb(8, 161, 110);
+	height: 100px;
+	position: relative;
+}
+.name-title{
+	width: 80%;
+	color:var(--font-color);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin: 0 ;
+	font-size: 1.7em;
+	padding-bottom: 0.5em;
+}
+.sub-title{
+	margin: 0 auto;
+	color:var(--sub-title-color);
+	font-size: 0.85em;
+	padding-bottom: 0.25em;
+}
+button{outline:none;}
+.btn{
+	margin-top: 2em;
+	border-radius: 25px;
+	border:0.5px solid  rgb(8, 161, 110);
+	height: 50px;
+	
+	background-color: rgb(73, 71, 71);;
+}
+.btn:hover{
+	background-color: rgb(8, 161, 110);
+}
+
+
+.btn a{
+	text-decoration: none;
+	padding: 1em;
+	color:white;
+	font-size: 1.5em;
+}
+.btn a::after{
+	content: ">";
+	margin-left: 1em;
+}
+.horizontal-line{
+	border:1px solid rgb(8, 161, 110);
+	
+}
+.intro p{
+	margin: 0.2em auto ;
+	font-size: 0.75em;
+	font-family:sans-serif;
+	font-weight: 100;
+	color: var(--para-color);
+
+}
+.icons{
+	position: relative;
+	left: 94%;
+	margin-top: 15%;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+}
+.icons a{
+	text-decoration: none;
+	background-color: rgb(39, 38, 38);
+	width: 35px;
+	border:0.1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 50%;
+	height: 30px;
+	text-align: center;
+	color: white;
+	margin-bottom: 0.6em;
+	font-size: 0.75em;	
+}
+.icons a:hover{
+	background-color: rgb(26, 172, 104);
+	color: white;
+	
+}
+.fa{
+	padding-top: 0.25em;
+}
+.mob-footer{
+	display: none;
+}
+
+@media only screen and (max-width:500px){
+	
+	header{
+		border-radius: 0px;
+		margin: 0 ;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 0;
+	}
+	.main-body{
+		position: relative;
+		width: 100%;
+		height:100%;
+		display: block;
+	}
+	.logo{
+		margin-left: 2em;
+	}
+	.nav-bar{
+		margin-left:10%
+	}
+	.nav-bar li{
+		padding-right: 2em;
+	}
+	.nav-two{
+		margin-right: 2em;
+		
+	}
+	.img-side{
+		width: 100%;
+		height: 100% ;
+	}
+	.img{
+		width: 100%;
+		height: 100%;
+	}
+	.content{
+		position: absolute;
+		width: 50%;
+		margin-left: 25%;
+		margin-top: 30%;
+		text-align: center;
+		top: 0;
+	}
+	hr{
+		display: none;
+	}
+	.name-title{
+		margin: 0 auto;
+		color: black;
+
+	}
+	.icons{
+		position: absolute;
+		margin-top: 10%;
+ 		flex-direction: row;
+		right: 0;
+	}
+	.mob-footer{
+		display: flex;
+		margin:0 auto;
+		margin-top: 15%;
+		width: 50%;
+	}
+	.mob-footer p{
+		font-size: 1.2em;
+		font-family: header-font;
+		color:white;
+		margin:0 auto;
+	}	
+	.mob-footer p::before{
+		content: open-quote;
+	}
+	
+}
